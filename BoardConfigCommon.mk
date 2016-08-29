@@ -40,7 +40,7 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
 TARGET_CPU_VARIANT := cortex-a7
-MALLOC_IMPL := dlmalloc
+# MALLOC_IMPL := dlmalloc
 # USE_CLANG_PLATFORM_BUILD := true
 BOARD_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 BOARD_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -165,9 +165,9 @@ TARGET_HW_DISK_ENCRYPTION := false
 
 # SELinux policies
 # qcom sepolicy
-include device/qcom/sepolicy/sepolicy.mk
+# include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+# BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # TWRP Recovery
 RECOVERY_FSTAB_VERSION := 2
@@ -188,3 +188,6 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_THEME := portrait_hdpi
 TW_INCLUDE_L_CRYPTO := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+
+# Disable CM SDK
+TARGET_DISABLE_CMSDK := true
