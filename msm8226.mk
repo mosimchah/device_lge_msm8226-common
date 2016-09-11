@@ -160,6 +160,10 @@ PRODUCT_PACKAGES += \
     camera.msm8226 \
     SnapdragonCamera
 
+# Telephony-ext
+PRODUCT_PACKAGES += telephony-ext
+PRODUCT_BOOT_JARS += telephony-ext
+
 ifeq ($(BOARD_HAS_NFC), true)
 # NFC packages
 PRODUCT_PACKAGES += \
