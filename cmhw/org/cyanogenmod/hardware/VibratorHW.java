@@ -16,17 +16,15 @@
 
 package org.cyanogenmod.hardware;
 
-import java.io.File;
 import java.util.Scanner;
-import org.cyanogenmod.hardware.util.FileUtils;
+import org.cyanogenmod.internal.util.FileUtils;
 
 public class VibratorHW {
 
     private static String NFORCE_PATH = "/sys/devices/platform/tspdrv/nforce_timed";
 
     public static boolean isSupported() {
-        File f = new File(NFORCE_PATH);
-        return f.exists();
+    return FileUtils.isFileWritable(NFORCE_PATH);
     }
 
     public static int getMaxIntensity()  {
