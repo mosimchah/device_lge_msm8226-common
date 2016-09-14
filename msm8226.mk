@@ -158,7 +158,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8226 \
-    SnapdragonCamera
+    Snap
 
 # Telephony-ext
 PRODUCT_PACKAGES += telephony-ext
