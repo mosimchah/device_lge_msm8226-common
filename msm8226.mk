@@ -159,6 +159,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8226
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += qcom.bluetooth.soc=smd
+
 ifeq ($(BOARD_HAS_NFC), true)
 # NFC packages
 PRODUCT_PACKAGES += \
