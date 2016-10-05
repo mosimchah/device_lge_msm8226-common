@@ -76,4 +76,3 @@ const char CameraParameters::WHITE_BALANCE_MANUAL_CCT[] = "wb-manual-cct";
     static const char VIDEO_WDR_ON[]; \
     static const char WHITE_BALANCE_MANUAL_CCT[];
 
-

@@ -108,7 +108,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libxml2 \
     libcurl \
-    libboringssl-compat
+    libboringssl-compat \
+    librmnetctl
 
 # Ebtables
 PRODUCT_PACKAGES += \
@@ -156,12 +157,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8226 \
-    SnapdragonCamera
-
-# Telephony-ext
-PRODUCT_PACKAGES += telephony-ext
-PRODUCT_BOOT_JARS += telephony-ext
+    camera.msm8226
 
 # Imgdiff
 PRODUCT_PACKAGES := imgdiff
