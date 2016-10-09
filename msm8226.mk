@@ -159,9 +159,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8226
 
-# Imgdiff
-PRODUCT_PACKAGES := imgdiff
-
 ifeq ($(BOARD_HAS_NFC), true)
 # NFC packages
 PRODUCT_PACKAGES += \
