@@ -146,7 +146,7 @@
     <bool name="config_batterySdCardAccessibility">true</bool>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">5</integer>
+    <integer name="config_screenBrightnessDim">1</integer>
 
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
